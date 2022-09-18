@@ -120,4 +120,45 @@
     }
   }
 
+  @media all and (min-width: variables.$desktop-breakpoint) {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    // gap: 4rem;
+    // height: fit-content;
+    &.page {
+      // padding: 30rem auto 10%;
+      padding-top: 28%;
+      padding-bottom: 0%;
+    }
+    
+    &__content {
+      grid-row: auto;
+      grid-column: 1/2;
+      text-align: start;
+      // border: 1px solid red;
+    }
+    &__explore-container {
+      grid-row: auto;
+      grid-column: 2/3;
+    }
+
+    &__heading {
+      margin: 1.5rem 0;
+    }
+
+    &__subheading {
+      font-size: 1.8rem;
+    }
+    &__body-text {
+      margin: 0;
+      // border: 1px solid red;
+      // border: 1px solid red;
+    }
+
+    &__explore-container {
+      max-width: 16rem;
+      max-height: 16rem;
+
+      // align-self: flex-end;
+    }
+  }
 }
