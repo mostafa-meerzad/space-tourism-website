@@ -1,27 +1,17 @@
 @use "./variables";
 
 .destination {
-  // border: 2px solid red;
-
   background-image: url("../assets/destination/background-destination-mobile.jpg");
 
-  // justify-content: center;
-  // align-content: center;
   text-align: center;
 
   &__nav {
-    // border: 2px solid red;
     grid-row: 3/4;
   }
   &__link {
-    // color: red;
     padding: 0.5em 0;
     font-size: 1.1em;
     margin: 0.5em;
-    // font-weight: 500;
-    // &:hover{
-    //     color: gray;
-    // }
 
     &:hover::after {
       content: "";
@@ -32,9 +22,6 @@
       height: 3px;
       background-color: variables.$gray;
       border-radius: 1px;
-      // top:50%;
-      // background-color: #fff;
-      // transform: translate(-);
     }
     &.active {
       color: variables.$white;
@@ -43,57 +30,42 @@
     &.active::after {
       content: "";
       position: absolute;
-      // top:50%;
+
       bottom: 0;
       left: 0;
       width: 100%;
       height: 3px;
       background-color: variables.$white;
-      // background-color: red;
+
       border-radius: 1px;
-      // background-color: #fff;
-      // transform: translate(-);
     }
   }
 
   &__img {
     width: 50%;
-    // border: 2px solid red;
+
     margin: 1.5em;
   }
   &__name {
-    // color: red;
     font-size: 3.5rem;
-    // margin-bottom: -.3em;
+
     margin: 2rem 0 0rem;
   }
-  // &__info{
-  //     // padding: 0 1em;
-  // }
-
-  // &__content-container{
-  //     // border: 2px solid red;
-  //     // padding: 2em;
-
-  // }
 
   &__line-break {
-    // background-color: ;
     margin: 2rem 0;
-    // border:1.5px solid variables.$dark-gray;
+
     opacity: 0.5;
     height: 2px;
     background-color: variables.$dark-gray;
     border: none;
   }
   &__travel-info-container {
-    // border: 1px solid green;
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
   }
   &__info-container {
-    // border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -107,7 +79,6 @@
     font-family: Barlow;
   }
   &__travel-data {
-    // color: variables.$blueish-gray;
     font-size: 1.6em;
     font-family: Bellefair;
     text-transform: uppercase;
@@ -125,11 +96,8 @@
     }
 
     &__link {
-      // border: 2px solid red;
       margin: 1.2rem;
       padding: 0.8rem 0;
-      // margin-bottom: 2rem !important;
-      // color: red;
     }
     &__name {
       font-size: 4.8rem;
@@ -155,13 +123,11 @@
   }
 
   @media all and (min-width: variables.$desktop-breakpoint) {
-
     background-image: url("../assets/destination/background-destination-desktop.jpg");
-    // gap: 10vw;
+
     column-gap: 10vw;
 
     &__img-container {
-      // border: 2px solid red;
       grid-column: 1/2;
       grid-row: 2/4;
       display: flex;
@@ -169,11 +135,6 @@
       align-items: center;
       margin-top: 4rem;
 
-      // display: grid;
-      // place-content: center;
-      // justify-content: center;
-
-      // width: 50vw;
       padding: 0;
     }
     &__img {
@@ -187,55 +148,33 @@
     &__content-container {
       grid-column: 2/3;
       grid-row: 3/4;
-      // max-width: 30rem;
+
       width: 100%;
       margin: 0;
       text-align: start;
-      // border: 2px solid red;
-      // justify-self: flex-start;
-      // align-self: flex-start;
     }
-    &__name{
+    &__name {
       font-size: 5.5rem;
     }
-    &__info{
+    &__info {
       max-width: 400px;
     }
 
     &__nav {
-      // border: 2px solid red;
-
       grid-column: 2/3;
       grid-row: 2 / auto;
-      // justify-self: flex-start;
+
       width: 100%;
       text-align: start;
-      // margin: 2rem 0 0;
-      // display: flex;
-      // justify-content: center;
 
       align-self: flex-end;
-      // text-align: start;
-      // grid-row-start: ;
     }
-    &__link{
-      margin: auto .9rem;
+    &__link {
+      margin: auto 0.9rem;
     }
 
-    &__travel-info-container{
-      // border: 2px solid red;
-justify-content: flex-start;
+    &__travel-info-container {
+      justify-content: flex-start;
     }
   }
 }
-
-// .destination{
-
-//     &__img{
-//         width: 50%;
-//     }
-
-//     &__content-container{
-//         border: 2px solid red;
-//     }
-// }
