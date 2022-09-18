@@ -1,0 +1,106 @@
+@use  "variables";
+
+.main{
+    // border: 2px solid red
+    // height: 100%;
+    // overflow: hidden;
+
+    &__header{
+        // border: 2px solid red;
+        position: absolute;
+        top: 0%;
+        left: 0;
+        display: flex;
+        // flex-grow: 1;
+        width: 100%;
+        // justify-content: sp;
+        z-index: 10;
+        // display: none;
+
+
+    }
+    &__hr{
+        display: none;
+    }
+    &__nav{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+        height: 200vh;
+        padding: 30% 0 30% 2em;
+        // border: 2px solid red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        // text-align: start;
+        // filter: blur(100px);
+        overflow: hidden;
+        display: none;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            // top: 0;
+            // left
+            inset: 0;
+            // background-color: #ccc;
+            // background-color: white;
+            // opacity: .5;
+            // filter: blur(10px);
+            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+            // filter: sepia(10px);
+            // box-sizing: content-box;
+        }
+    }
+    
+    &__link{
+        // color:  red;
+        width: 100%;
+        color: white;
+        padding: .3em 0;
+        margin: .6em 0;
+        text-transform: uppercase;
+        // font-size: large;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        transform: scaleY(1.4);
+    
+        &.active::after{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 90%;
+            width: 4px;
+            background-color: variables.$white;
+            // margin: auto 0 ;
+            transform: translate(0, -50%);
+            border-radius: 5px;
+        }
+        // &:hover::after{
+        //     content: "";
+        //     display: inline-block;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     height: 90%;
+        //     width: 4px;
+        //     background-color: variables.$blueish-gray;
+        //     // margin: auto 0 ;
+        //     transform: translate(0, -50%);
+        //     border-radius: 5px;
+
+            
+        // }
+        &-num{
+            margin-right:1em ;
+            color: white;
+            font-weight: bold;
+    
+        }
+    }
+}

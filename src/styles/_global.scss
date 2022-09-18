@@ -1,0 +1,42 @@
+@use "./variables";
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Bellefair;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.body-text{
+    font-family: Barlow;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: variables.$blueish-gray;
+    margin: 0;
+    // padding: 0 1em;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    // padding: auto 2rem;
+    // max-width: 500px;
+}
+
+.nav{
+    // columns: green !important;
+    // font-size: large;
+    font-family: Barlow;
+    
+    &__link{
+        text-decoration: none;
+        color: variables.$blueish-gray;
+        text-transform: uppercase;
+        // &.active{
+        //     background-color: #fff;
+        // }
+
+    }
+}
+
