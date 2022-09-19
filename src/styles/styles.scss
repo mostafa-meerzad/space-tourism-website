@@ -7,6 +7,17 @@
 @use "./crew";
 @use "./technology";
 
+@font-face{
+
+  font-family: Bellefair;
+  src: url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+}
+
+@font-face {
+  font-family:Barlow ;
+  src: url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700;800&family=Bellefair&display=swap');
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -56,7 +67,8 @@ body {
   }
 
   @media all and (min-width: variables.$desktop-breakpoint) {
-    padding: 16% 10% 5%;
+    padding: 16vmin 10% 5%;
+    place-content: center;
 
     grid-template-columns: repeat(2, 1fr);
 
